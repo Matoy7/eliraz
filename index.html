@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+   
+    .carousel-inner{
+      direction: rtl;
+      margin: auto;
+      width: 90%;
+      
+    }
+    .carousel-indicators li {
+     position:relative; 
+     display: inline-block;
+     direction: rtl;
+     text-indent: 0;
+     cursor: pointer;
+     border: none;
+     border-radius: 50%;
+     background-color:  #595959;
+
+     box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+   }
+
+   .carousel-inner > .item {
+    
+     
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+    
+  }
+  .carousel-inner > .active {
+    left: 0;
+  }
+  .item {
+    display: none;
+    position: relative;
+    .transition(.1s ease-in-out left);
+    direction: rtl;
+  }
+  .container-fluid{
+    background:  #f2f2f2;
+
+  }
+  .carousel-control {
+    top:50%;
+    width:auto;
+    height:1em;
+    color: black;
+    direction: rtl;
+    
+  }
+  .carousel-indicators .active {
+    direction: rtl;
+    background-color:  #1a1a1a;
+  }
+  .carousel{
+   direction: rtl;
+ }
+
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+     <div style="float:right">
+      <div class="navbar-header">
+       <div style="float:right">
+        <img src="logo.png"/> 
+      </div>
+      <ul class="nav navbar-nav">
+
+        <li><a href="#">  <h1>על המשרד</h1></a></li>
+        <li><a href="#"><h1>שאלות נפוצות</h1></a></li> 
+        <li><a href="#"><h1>צור קשר</h1></a></li> 
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3" ></li>
+
+
+
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" align="right" role="listbox">
+        <div class="item active">
+          <table>
+            <tr>
+             
+              <td align="right">
+               שירותי המשרד 
+               <br>
+               ביקורת ועריכת דוחות כספיים מבוקרים לחברות פרטיות, עמותות, מלכ"רים, ביקורת מטעם משרד הפנים על דיווחי רשויות מקומיות.    <br>
+               הכנת דיווחים שוטפים למע"מ, מס הכנסה, ביטוח לאומי.    <br>
+               הנה"ח לחברות ועצמאים, הקמת מערכת הנה"ח לעסקים חדשים.    <br>
+               פתיחת תיקים לעצמאים וחברות במס הכנסה, מע"מ, ביטוח לאומי.    <br>
+               הכנת דוחות שנתיים ותקופתיים לרשויות המס. דוחות של חברות, שותפויות, עצמאים, דוחות שכירים להחזר.    <br>
+               יצוג בדיונים על דוחות שנתיים בפני רשויות המס – מס הכנסה, מיסוי מקרקעין, מס ערך מוסף, ביטוח לאומי.    <br>
+               הכנת הצהרות הון למס הכנסה.    <br>
+               הכנת תלושי משכורת, הדרכה בהכנת תלושים לעמידה בדיני העבודה השונים.    <br>
+               הכנת דוחות שנתיים של עמותות לרשם העמותות .    <br>
+               ליווי עסקים בתחילת הדרך, בדיקת כדאיות רכישת עסק, הערכות שווי.    <br>
+               הכנת תכניות עיסקיות להגשה לבנקים, מוסדות מממנים.    <br>
+               הכנת חוות דעת מומחה לבתי משפט.    <br>
+               גישור.
+             </td>
+             <td width="50%">
+              <img src="1.png" alt="Chania" width="460" height="345">
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="item">
+       <table>
+        <tr>
+         
+          <td align="right">
+           שירותי המשרד 
+           <br>
+           ביקורת ועריכת דוחות כספיים מבוקרים לחברות פרטיות, עמותות, מלכ"רים, ביקורת מטעם משרד הפנים על דיווחי רשויות מקומיות.    <br>
+           הכנת דיווחים שוטפים למע"מ, מס הכנסה, ביטוח לאומי.    <br>
+           הנה"ח לחברות ועצמאים, הקמת מערכת הנה"ח לעסקים חדשים.    <br>
+           פתיחת תיקים לעצמאים וחברות במס הכנסה, מע"מ, ביטוח לאומי.    <br>
+           הכנת דוחות שנתיים ותקופתיים לרשויות המס. דוחות של חברות, שותפויות, עצמאים, דוחות שכירים להחזר.    <br>
+           יצוג בדיונים על דוחות שנתיים בפני רשויות המס – מס הכנסה, מיסוי מקרקעין, מס ערך מוסף, ביטוח לאומי.    <br>
+           הכנת הצהרות הון למס הכנסה.    <br>
+           הכנת תלושי משכורת, הדרכה בהכנת תלושים לעמידה בדיני העבודה השונים.    <br>
+           הכנת דוחות שנתיים של עמותות לרשם העמותות .    <br>
+           ליווי עסקים בתחילת הדרך, בדיקת כדאיות רכישת עסק, הערכות שווי.    <br>
+           הכנת תכניות עיסקיות להגשה לבנקים, מוסדות מממנים.    <br>
+           הכנת חוות דעת מומחה לבתי משפט.    <br>
+           גישור.
+         </td>
+         <td width="50%">
+          <img src="2.png" alt="Chania" width="460" height="345">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="item">
+    <table>
+      <tr>
+       
+        <td align="right">
+          שירותי המשרד 
+          <br>
+          ביקורת ועריכת דוחות כספיים מבוקרים לחברות פרטיות, עמותות, מלכ"רים, ביקורת מטעם משרד הפנים על דיווחי רשויות מקומיות.    <br>
+          הכנת דיווחים שוטפים למע"מ, מס הכנסה, ביטוח לאומי.    <br>
+          הנה"ח לחברות ועצמאים, הקמת מערכת הנה"ח לעסקים חדשים.    <br>
+          פתיחת תיקים לעצמאים וחברות במס הכנסה, מע"מ, ביטוח לאומי.    <br>
+          הכנת דוחות שנתיים ותקופתיים לרשויות המס. דוחות של חברות, שותפויות, עצמאים, דוחות שכירים להחזר.    <br>
+          יצוג בדיונים על דוחות שנתיים בפני רשויות המס – מס הכנסה, מיסוי מקרקעין, מס ערך מוסף, ביטוח לאומי.    <br>
+          הכנת הצהרות הון למס הכנסה.    <br>
+          הכנת תלושי משכורת, הדרכה בהכנת תלושים לעמידה בדיני העבודה השונים.    <br>
+          הכנת דוחות שנתיים של עמותות לרשם העמותות .    <br>
+          ליווי עסקים בתחילת הדרך, בדיקת כדאיות רכישת עסק, הערכות שווי.    <br>
+          הכנת תכניות עיסקיות להגשה לבנקים, מוסדות מממנים.    <br>
+          הכנת חוות דעת מומחה לבתי משפט.    <br>
+          גישור.
+        </td>
+        <td width="50%">
+          <img src="3.png" alt="Chania" width="460" height="345">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="item">
+    <table>
+      <tr>
+        
+        <td align="right">
+          שירותי המשרד 
+          <br>
+          ביקורת ועריכת דוחות כספיים מבוקרים לחברות פרטיות, עמותות, מלכ"רים, ביקורת מטעם משרד הפנים על דיווחי רשויות מקומיות.    <br>
+          הכנת דיווחים שוטפים למע"מ, מס הכנסה, ביטוח לאומי.    <br>
+          הנה"ח לחברות ועצמאים, הקמת מערכת הנה"ח לעסקים חדשים.    <br>
+          פתיחת תיקים לעצמאים וחברות במס הכנסה, מע"מ, ביטוח לאומי.    <br>
+          הכנת דוחות שנתיים ותקופתיים לרשויות המס. דוחות של חברות, שותפויות, עצמאים, דוחות שכירים להחזר.    <br>
+          יצוג בדיונים על דוחות שנתיים בפני רשויות המס – מס הכנסה, מיסוי מקרקעין, מס ערך מוסף, ביטוח לאומי.    <br>
+          הכנת הצהרות הון למס הכנסה.    <br>
+          הכנת תלושי משכורת, הדרכה בהכנת תלושים לעמידה בדיני העבודה השונים.    <br>
+          הכנת דוחות שנתיים של עמותות לרשם העמותות .    <br>
+          ליווי עסקים בתחילת הדרך, בדיקת כדאיות רכישת עסק, הערכות שווי.    <br>
+          הכנת תכניות עיסקיות להגשה לבנקים, מוסדות מממנים.    <br>
+          הכנת חוות דעת מומחה לבתי משפט.    <br>
+          גישור.
+        </td>
+        <td width="50%">
+          <img src="4.png" alt="Chania" width="460" height="345">
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Left and right controls -->
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+<center>
+
+ 
+
+  
+</div><!-- /.carousel -->
+<img src="footer.png">
+</center>
+</body>
+</html>
